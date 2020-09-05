@@ -1,0 +1,50 @@
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<style>
+		input{
+			padding: 15px;			
+		}
+	</style>
+	 <script>
+var a = document.getElementById('word1').value;
+var b = document.getElementById('word2').value;
+document.getElementById('word1').value;
+function compare (a,b) {
+
+  y = a.split("").sort();
+  z = b.split("").sort();
+  for (i=0; i<y.length; i++) {
+    if(y.length===z.length) {
+      if (y[i]===z[i]){
+        alert(a + " and " + b + " are anagrams!");
+        break;
+      }
+      else {
+        alert(a + " and " + b + " are not anagrams.");
+        break;
+      }
+    }
+    else {
+      alert(a + " has a different amount of letters than " + b);
+    }
+    break;
+  }
+}
+compare(a, b) ;
+
+	</script>
+</head>
+<body>
+	<form>
+		<h3>JavaScript Anagram Program </h3>
+		<input type="text" id="word1" placeholder="Enter String" />
+		<input type="text" id="word2" placeholder="Enter String" />
+		<input type="button" onclick="document.getElementById('demo').innerHTML" value="Check Anagrams " />
+	</form>
+</body>
+</html>
+
+
+
