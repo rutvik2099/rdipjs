@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <script src="file.js">
+
+   
+    </script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-2">
+            
+                <div class="calculator">
+                    <div class="display">
+                        <input type="text" readonly id="display" multiple>
+                    </div>
+                    <table>
+                        <tr>
+                            <th><input type="button" value="C" onclick="cls('')" style="background-color: red;color: white"></th>
+                            <th><input type="button" value="&#8730;" onclick="sqrt()" style="background-color: grey;color: white;"></th>
+                            <th><input type="button" value="x^2" onclick="power()" style="background-color: grey;color: white;"></th>
+                            <th><input type="button" value="&#x2190;" onclick="del()" style="background-color:crimson;color: white;"></th>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="1" onclick="math('1')"></td>
+                            <td><input type="button" value="2" onclick="math('2')"></td>
+                            <td><input type="button" value="3" onclick="math('3')"></td>
+                            <th><input type="button" value="+" onclick="math('+')" style="background-color: orange;color: white;"></th>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="4" onclick="math('4')"></td>
+                            <td><input type="button" value="5" onclick="math('5')"></td>
+                            <td><input type="button" value="6" onclick="math('6')"></td>
+                            <th><input type="button" value="-" onclick="math('-')" style="background-color: orange;color: white;"></th>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="7" onclick="math('7')"></td>
+                            <td><input type="button" value="8" onclick="math('8')"></td>
+                            <td><input type="button" value="9" onclick="math('9')"></td>
+                            <th><input type="button" value="&times;" onclick="math('*')" style="background-color: orange;color: white;"></th>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="0" onclick="math('0')"></td>
+                            <td><input type="button" value="." onclick="math('.')"></td>
+                            <td><input type="button" value="00" onclick="math('00')"></td>
+                            <th><input type="button" value="&divide;" onclick="math('/')" style="background-color: orange;color: white;"></th>
+                        </tr>
+                        <tr>
+                            <th><input type="button" value="%" onclick="math('%')" style="background-color: grey;color: white;"></th>
+                            <th><input type="button" value="abs" onclick="abs()" style="background-color: grey;color: white;"></th>
+                            <th colspan="2"><input type="button" value="=" onclick="equal()" style="width: 90px;background-color: green;color: white"></th>
+                        </tr>
+                    </table>
+                </div>
+            
+</body></html>
+        </div>
+        <div class="col-3"></div>
+    </div>
+   
